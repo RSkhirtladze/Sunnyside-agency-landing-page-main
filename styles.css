@@ -1,0 +1,599 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #24303e;
+  --gray: #808397;
+  --yellow: #fad400;
+  --red: #fe7766;
+  --green: #24554a;
+  --whitish: #fffcf8;
+  --grayish: #a7aaad;
+  --darkGray: #5b636d;
+  --lightGreen: #90d4c6;
+  --darkGree: #2c7566;
+  --darkYellow: #fbd600;
+}
+
+html {
+  width: 100vw;
+  /* width: 100%; */
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+}
+
+.DesktopResponsive {
+  display: none;
+}
+
+.IntroContainer {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.MobileBurgerMenuNav {
+  top: 5.5rem;
+  right: 1.5rem;
+  position: inherit;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  display: none;
+}
+
+.Triangle {
+  width: 0;
+  height: 0;
+  border-top: 1.5rem solid transparent;
+  border-right: 1.5rem solid var(--whitish);
+}
+
+.Navigation {
+  margin-top: -0.1rem;
+  max-width: 80%;
+  width: 20.5rem;
+  background-color: var(--whitish);
+  padding: 2.44rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  color: var(--gray);
+  font-family: Barlow;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.5625rem; /* 125% */
+  letter-spacing: -0.00894rem;
+}
+
+.ContactDiv {
+  width: 8.75rem;
+  height: 3.5rem;
+  flex-shrink: 0;
+  border-radius: 1.75rem;
+  background: var(--darkYellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--black);
+  font-family: Fraunces;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  line-height: 1.5625rem; /* 166.667% */
+  letter-spacing: -0.00669rem;
+  text-transform: uppercase;
+}
+
+.IntroContainer > img {
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.RestOfIntro {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+}
+
+header {
+  width: 100%;
+  position: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  top: 2rem;
+  padding: 0 1.5rem 0 1.5rem;
+}
+
+.IntroHeader {
+  width: 100%;
+  position: inherit;
+  color: var(--white);
+  text-align: center;
+  font-family: Fraunces;
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: 0.39063rem;
+  top: 8.5rem;
+  padding: 0 1.5rem;
+}
+
+.ArrowContainer {
+  width: 100%;
+  position: inherit;
+  display: flex;
+  justify-content: center;
+  margin-top: 3.25rem;
+  top: 13rem;
+}
+
+.MainContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.GridElement {
+  width: 100%;
+}
+
+.GridImg {
+  width: 100%;
+}
+
+.EggElement {
+  margin-top: -0.2rem;
+  order: 1;
+}
+.TransformBrandElement {
+  order: 2;
+  padding: 4rem 1.5rem;
+}
+
+.TopicH {
+  color: var(--black);
+  text-align: center;
+  font-family: Fraunces;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: -0.01431rem;
+}
+
+.TopicP {
+  margin-top: 1.5rem;
+  color: var(--gray);
+  text-align: center;
+  font-family: Barlow;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.875rem;
+  letter-spacing: -0.00806rem;
+}
+
+.LearnMoreContainer {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.LearnMore {
+  color: var(--black);
+  font-family: Fraunces;
+  font-size: 0.9375rem;
+  font-weight: 900;
+  line-height: 1.5625rem;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+}
+
+.Underline {
+  width: 8.5625rem;
+  height: 0.625rem;
+  border-radius: 1.75rem;
+  opacity: 0.25;
+  margin-top: -0.6rem;
+}
+
+.Yellow {
+  background: var(--yellow);
+}
+
+.GlassElement {
+  order: 3;
+}
+
+.StandOutElement {
+  padding: 4rem 1.5rem;
+  order: 4;
+}
+
+.Red {
+  background: var(--red);
+}
+
+.GraphicsElement {
+  order: 5;
+  position: relative;
+}
+
+.GridElementInfoPart {
+  position: absolute;
+  z-index: 99;
+  /* top: 24.88rem; */
+  bottom: 3.7rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.GridElementInfoPart h3 {
+  color: var(--green);
+  text-align: center;
+  font-family: Fraunces;
+  font-size: 1.75rem;
+  font-weight: 900;
+  letter-spacing: -0.0125rem;
+}
+.GridElementInfoPart p {
+  padding: 0 1.5rem;
+  margin-top: 1.69rem;
+  color: #24554a;
+  text-align: center;
+  font-family: Barlow;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.6875rem; /* 168.75% */
+  letter-spacing: -0.00713rem;
+}
+
+.PhotographyElement {
+  margin-top: -0.3rem;
+  order: 6;
+  position: relative;
+}
+
+.TestimonialsContainer {
+  background-color: var(--whitish);
+  padding: 4rem 1.5rem 5.38rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ClientTestimonials {
+  color: var(--grayish);
+  text-align: center;
+  font-family: Fraunces;
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 0.25rem;
+}
+
+.IndividualTestimonialsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.IndividualTestimonial {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+  /* gap: 2rem; */
+}
+
+.AvatarImgContainer {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 4.5rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.AvatarImgContainer img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.IndividualTestimonial {
+  color: var(--darkGray);
+
+  text-align: center;
+  font-family: Barlow;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 2rem;
+  letter-spacing: -0.00806rem;
+}
+
+.UserInfoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.56rem;
+}
+
+.UserName {
+  color: var(--black);
+
+  text-align: center;
+  font-family: Fraunces;
+  font-size: 1.125rem;
+  font-weight: 900;
+  letter-spacing: -0.00806rem;
+}
+
+.Position {
+  color: #a7aaad;
+
+  text-align: center;
+  font-family: Barlow;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.5625rem; /* 178.571% */
+  letter-spacing: -0.00625rem;
+}
+
+.DecorationImgsContainer {
+  width: 100%;
+}
+
+.MobileImgContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.MobileImgContainer:nth-child(1) {
+  width: 100%;
+  object-fit: cover;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.MobileImgContainer:nth-child(2) {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.MobileImgContainer:nth-child(3) {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.MobileImgContainer:nth-child(4) {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.DecImgContainer {
+  width: 100%;
+  height: 100%; /* Ensure that the container takes full height of the grid area */
+}
+
+.DecImgContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This ensures the image scales and crops without distortion */
+}
+
+footer {
+  width: 100%;
+  background-color: var(--lightGreen);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0 5rem 0;
+}
+
+.footerNavigation {
+  margin-top: 2.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 3.56rem;
+}
+
+.footerNavigation a {
+  text-decoration: none;
+  color: #458d7e;
+  font-family: Barlow;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5625rem; /* 138.889% */
+  letter-spacing: -0.00806rem;
+}
+
+.Socials {
+  width: 100%;
+  margin-top: 5.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+@media (min-width: 64rem) {
+  .MobileResponsive {
+    display: none;
+  }
+
+  .DesktopResponsive {
+    display: flex;
+  }
+
+  header {
+    top: 2.12rem;
+    padding: 0 3rem 0 2.5rem;
+    align-items: center;
+  }
+
+  .FlatMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .FlatMenu > ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .DefaultA {
+    color: var(--white);
+    font-family: Barlow;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.5625rem; /* 138.889% */
+    letter-spacing: -0.00806rem;
+    text-decoration: none;
+  }
+
+  .DesktopContact {
+    width: 8.75rem;
+    height: 3.5rem;
+    border-radius: 1.75rem;
+    background: rgba(255, 255, 255, 0.2537);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .DesktopContact a {
+    color: rgba(255, 255, 255, 1);
+    font-family: Fraunces;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    line-height: 1.5625rem; /* 166.667% */
+    letter-spacing: -0.00669rem;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .IntroHeader {
+    font-size: 3.5rem;
+    font-weight: 900;
+    letter-spacing: 0.54688rem;
+    top: 12rem;
+  }
+
+  .ArrowContainer {
+    margin-top: none;
+    top: 20rem;
+  }
+
+  .MainContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .EggElement {
+    margin-top: 0;
+    order: 2;
+  }
+  .TransformBrandElement {
+    order: 1;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .TopicH {
+    font-size: 2.5rem;
+    letter-spacing: -0.01788rem;
+  }
+
+  .StandOutElement {
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .PhotographyElement {
+    margin-top: 0;
+  }
+
+  .TestimonialsContainer {
+    padding: 10rem;
+  }
+
+  .ClientTestimonials {
+    font-size: 1.25rem;
+    letter-spacing: 0.3125rem;
+  }
+
+  .IndividualTestimonialsContainer {
+    flex-direction: row;
+    align-items: center;
+    align-items: flex-start;
+    gap: 1.8rem;
+  }
+
+  .IndividualTestimonial {
+    height: 22rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5rem;
+    gap: 0;
+  }
+
+  .MobileImgContainer {
+    display: none;
+  }
+
+  .DecImgContainer {
+    width: 100%;
+    height: 100%; /* Ensure that the container takes full height of the grid area */
+  }
+
+  .DecImgContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This ensures the image scales and crops without distortion */
+  }
+
+  footer {
+    margin-top: -0.5rem;
+  }
+
+  .footerNavigation a:hover {
+    color: var(--white);
+  }
+}
